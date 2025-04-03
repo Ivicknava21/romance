@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Para Ti❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+        .collage {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        .collage img {
+            width: 220px;  /* Tamaño más pequeño */
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            position: absolute;
+        }
+        .collage img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        /* Posiciones más desordenadas */
+        .collage img:nth-child(1) { top: 5%; left: 1%; transform: rotate(10deg); }
+        .collage img:nth-child(2) { top: 15%; right: 6%; transform: rotate(12deg); }
+        .collage img:nth-child(3) { bottom: 50%; left: 20%; transform: rotate(-8deg); }
+        .collage img:nth-child(4) { bottom: 5%; right: 25%; transform: rotate(-17deg); }
+        .collage img:nth-child(5) { top: 47%; left: 20%; transform: rotate(-5deg); }
+        .collage img:nth-child(6) { bottom: 45.1%; right: 43%; transform: rotate(15deg); }
+        .collage img:nth-child(7) { top: 50%; left: 0%; transform: rotate(-12deg); }
+        .collage img:nth-child(8) { top: 50%; right: 43.5%; transform: rotate(6deg); }
+        .collage img:nth-child(9) { bottom: 50%; left: 57%; transform: rotate(-9deg); }
+        .collage img:nth-child(10) { bottom: 8%; right: 5%; transform: rotate(9deg); }
+        
+        .musica {
+            margin-top: 20px;
+        }
+        .bloques {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .bloque {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: left;
+        }
+        .flores {
+            position: relative;
+            display: inline-block;
+            animation: mover 3s infinite ease-in-out alternate;
+            margin-top: 50px;
+        }
+        @keyframes mover {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Para Ana, el amor de mi vida. &lt;3</h1>
+    
+    <div class="collage">
+        <img src="https://i.postimg.cc/Gpz41Jky/temp-Image2-Jp-Vr-M.avif" alt="anayyo1">
+        <img src="https://i.postimg.cc/Z5c0zxmh/temp-Image-Hh-CN3-Q.avif" alt="anayyo9">
+        <img src="https://i.postimg.cc/d1tT7Sq6/temp-Image-Adu1-V4.avif" alt="anayyo5">
+        <img src="https://i.postimg.cc/DZj41d0T/temp-Imaged-MIWj-M.avif" alt="anayyo4">
+        <img src="https://i.postimg.cc/CxTBCKhz/temp-Imageg-NBnaq.avif" alt="anayyo15">
+        <img src="https://i.postimg.cc/XvW5WYmT/temp-Imageh8whbx.avif" alt="anayyo28">
+        <img src="https://i.postimg.cc/xdPz1SSq/temp-Image-ROi-Nt-C.avif" alt="anayyo14">
+        <img src="https://i.postimg.cc/SNzYz9pB/temp-Image-Y4-Kb-NJ.avif" alt="anayyo18">
+        <img src="https://i.postimg.cc/T3VytX1Q/temp-Image-T6-NIze.avif" alt="anayyo22">
+        <img src="https://i.postimg.cc/kMHt4cLN/temp-Imagesl-Eep-W.avif" alt="anayyo24">
+	
+
+    </div>
+    
+    <div class="musica">
+        <h2>🎧</h2>
+        <audio controls>
+            <source src="https://files.catbox.moe/pm7p8i.mp3" type="audio/mpeg">
+            Tu navegador no soporta el reproductor de audio.
+        </audio>
+    </div>
+    
+<button onclick="toggleCarta()" class="boton-carta">💌 abreme 💌</button>
+<div id="carta-container" class="carta">
+    <p>Holaaa Lucyy,</p>
+    <p>Hoy cumplimos cinco meses de relacion y en verdad no puedo estar mas agradecido contigo, me has hecho la persona mas feliz del mundo, agradezco muchisimo que me permitieras estar a tu lado tanto tiempo, y ojala me permitas estar aqui, amandote cada dia mas, muchisimo mas, prometo seguir apoyandote y haciendote feliz, porque de verdad no hay nada que desee mas que verte sonreir.Sonrisa de verdad que me llena tanto, tu voz es mi melodia favorita, y agradezco por el regalo tan grande que me da a diario con tu amor, es el regalo mas hermoso que la vida me ha dado y la verdad es que no encuentro las palabras suficientes para describir cuanto significas para mi...</p>
+    <p>Te amo con todo mi corazón y alma mi niña.❤️</p>
+ <p>Eres mi todo</p>
+	
+</div>
+
+<script>
+    document.getElementById('carta-container').style.display = "none"; // Asegura que inicie cerrada
+
+    function toggleCarta() {
+        var carta = document.getElementById('carta-container');
+        carta.style.display = (carta.style.display === "none" || carta.style.display === "") ? "block" : "none";
+    }
+</script>
+  </div>
+    
+    <h2>❤️ Cosas que amo de ti❤️</h2>
+    <div class="bloques">
+        <div class="bloque">🌺 Eres la niña mas linda del mundo.</div>
+        <div class="bloque">🌼 Tienes los ojos mas preciosos que he visto en mi vida.</div>
+        <div class="bloque">🌹 Verte sonreir.</div>
+        <div class="bloque">🌻 Tu estilo es increible.</div>
+        <div class="bloque">🌷 Eres muy talentosa.</div>
+        <div class="bloque">🌺 Siempre sabes cómo hacerme sentir mejor.</div>
+        <div class="bloque">🌼 Eres la niña mas lista que conozco.</div>
+        <div class="bloque">🌹 Me encanta compartir momentos contigo.</div>
+        <div class="bloque">🌻 Lo increiblemente guapa que eres.</div>
+        <div class="bloque">🌷 Me inspiras a ser mejor cada día.</div>
+        <div class="bloque">🌼 Lo feliz que me haces.</div>
+        <div class="bloque">🌺 Simplemente, amo todo de ti corazon y jamas dejare de hacerlo 💕</div>
+    </div>
+    
+    <div class="flores">
+        <img src="https://i.postimg.cc/pXg80ZZV/temp-Image6-XJ2-Yq.avif" alt="flores.jpg">
+    </div>
+    
+    <p style="margin-top: 20px; font-size: 20px; color: #d63384;">Las flores que te debía, corazón❤️</p>
+</body>
+</html>
